@@ -49,7 +49,11 @@ app.get('/products', (req, res) => {
 app.get('/products/:name', (req, res) => {
   const { name } = req.params;
   const data = products.find(product => product.name === name);
-  product ? res.json({ product }) : res.sendStatus(403);
+  if (data) {
+    res.json({ data, _links: { self: `/products/${name}`}});
+  } else {
+    res.sendStatus(404);
+  }
 });
 
 app.post('/email', (req, res) => {
