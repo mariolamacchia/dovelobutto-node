@@ -1,0 +1,614 @@
+{
+    "bins": [
+        {
+            "id": 1,
+            "name": "Indifferenziata"
+        },
+        {
+            "id": 2,
+            "name": "Carta"
+        },
+        {
+            "id": 3,
+            "name": "Vetro"
+        },
+        {
+            "id": 4,
+            "name": "Plastica e lattine"
+        },
+        {
+            "id": 5,
+            "name": "Organico"
+        },
+        {
+            "id": 6,
+            "name": "Abiti usati"
+        },
+        {
+            "id": 7,
+            "name": "Pile"
+        },
+        {
+            "id": 8,
+            "name": "Farmaci"
+        }
+    ],
+    "products": [
+        {
+            "bin": 1,
+            "name": "accendini"
+        },
+        {
+            "bin": 2,
+            "name": "agende in carta e/o cartoncino"
+        },
+        {
+            "bin": 1,
+            "name": "assorbenti igienici"
+        },
+        {
+            "bin": 5,
+            "name": "avanzi di cucina"
+        },
+        {
+            "bin": 4,
+            "name": "barattoli e scatole in metallo"
+        },
+        {
+            "bin": 4,
+            "name": "bicchieri di plastica"
+        },
+        {
+            "bin": 3,
+            "name": "bicchieri di vetro"
+        },
+        {
+            "bin": 1,
+            "name": "biro"
+        },
+        {
+            "bin": 4,
+            "name": "bombolette spray"
+        },
+        {
+            "bin": 6,
+            "name": "borse in pelle, tela"
+        },
+        {
+            "bin": 4,
+            "name": "bottiglie di plastica"
+        },
+        {
+            "bin": 3,
+            "name": "bottiglie di vetro"
+        },
+        {
+            "bin": 5,
+            "name": "bucce della frutta"
+        },
+        {
+            "bin": 4,
+            "name": "buste per alimenti in plastica"
+        },
+        {
+            "bin": 4,
+            "name": "caffettiere"
+        },
+        {
+            "bin": 1,
+            "name": "calze di nylon"
+        },
+        {
+            "bin": 6,
+            "name": "cappelli"
+        },
+        {
+            "bin": 4,
+            "name": "capsule e chiusure in metallo"
+        },
+        {
+            "bin": 3,
+            "name": "caraffe di vetro"
+        },
+        {
+            "bin": 5,
+            "name": "carne"
+        },
+        {
+            "bin": 5,
+            "name": "carta assorbente per cucina"
+        },
+        {
+            "bin": 1,
+            "name": "carta chimica per fax"
+        },
+        {
+            "bin": 2,
+            "name": "carta da pacchi e per usi grafici"
+        },
+        {
+            "bin": 2,
+            "name": "carta del pane"
+        },
+        {
+            "bin": 1,
+            "name": "carta forno"
+        },
+        {
+            "bin": 1,
+            "name": "carta per alimenti"
+        },
+        {
+            "bin": 4,
+            "name": "carta stagnola (fogli di alluminio da"
+        },
+        {
+            "bin": 1,
+            "name": "carta vetrata"
+        },
+        {
+            "bin": 2,
+            "name": "cartone ondulato"
+        },
+        {
+            "bin": 2,
+            "name": "cartoni delle pizze"
+        },
+        {
+            "bin": 2,
+            "name": "cartoni del latte o dei succhi di"
+        },
+        {
+            "bin": 1,
+            "name": "cassette audio e video"
+        },
+        {
+            "bin": 2,
+            "name": "cassette della frutta in cartone"
+        },
+        {
+            "bin": 1,
+            "name": "cd e relative custodie"
+        },
+        {
+            "bin": 4,
+            "name": "cellophane"
+        },
+        {
+            "bin": 4,
+            "name": "chiavi"
+        },
+        {
+            "bin": 5,
+            "name": "cibo (avanzi sia crudi che cotti)"
+        },
+        {
+            "bin": 2,
+            "name": "contenitori in carta per alimenti"
+        },
+        {
+            "bin": 4,
+            "name": "contenitori in plastica per uova"
+        },
+        {
+            "bin": 4,
+            "name": "coperchi in alluminio"
+        },
+        {
+            "bin": 4,
+            "name": "coperchi in plastica"
+        },
+        {
+            "bin": 6,
+            "name": "coperte"
+        },
+        {
+            "bin": 5,
+            "name": "cotone idrofilo"
+        },
+        {
+            "bin": 1,
+            "name": "cottonfioc"
+        },
+        {
+            "bin": 1,
+            "name": "dvd e relative custodie"
+        },
+        {
+            "bin": 1,
+            "name": "elastici"
+        },
+        {
+            "bin": 5,
+            "name": "erba"
+        },
+        {
+            "bin": 1,
+            "name": "escrementi animali"
+        },
+        {
+            "bin": 2,
+            "name": "faldoni per uffici"
+        },
+        {
+            "bin": 8,
+            "name": "farmaci e medicinali"
+        },
+        {
+            "bin": 5,
+            "name": "fazzoletti di carta usati"
+        },
+        {
+            "bin": 5,
+            "name": "fiammiferi di legno"
+        },
+        {
+            "bin": 1,
+            "name": "fili elettrici"
+        },
+        {
+            "bin": 1,
+            "name": "filtri cappa"
+        },
+        {
+            "bin": 5,
+            "name": "fiori"
+        },
+        {
+            "bin": 1,
+            "name": "fiori finti"
+        },
+        {
+            "bin": 4,
+            "name": "flaconi per detergenti (shampoo,"
+        },
+        {
+            "bin": 4,
+            "name": "flaconi per detersivi (per piatti, per"
+        },
+        {
+            "bin": 1,
+            "name": "floppy disk"
+        },
+        {
+            "bin": 5,
+            "name": "fogliame"
+        },
+        {
+            "bin": 4,
+            "name": "fogli di alluminio per alimenti"
+        },
+        {
+            "bin": 5,
+            "name": "fondi di the o di caffè"
+        },
+        {
+            "bin": 5,
+            "name": "formaggi"
+        },
+        {
+            "bin": 1,
+            "name": "fotografie e pellicole"
+        },
+        {
+            "bin": 5,
+            "name": "frutta"
+        },
+        {
+            "bin": 1,
+            "name": "giocattoli"
+        },
+        {
+            "bin": 2,
+            "name": "giornali di qualsiasi genere"
+        },
+        {
+            "bin": 1,
+            "name": "gomma da masticare"
+        },
+        {
+            "bin": 1,
+            "name": "gommapiuma"
+        },
+        {
+            "bin": 1,
+            "name": "grucce appendiabiti"
+        },
+        {
+            "bin": 1,
+            "name": "guanti in gomma"
+        },
+        {
+            "bin": 6,
+            "name": "guanti in pelle, lana"
+        },
+        {
+            "bin": 1,
+            "name": "guarnizioni"
+        },
+        {
+            "bin": 5,
+            "name": "gusci di frutta secca"
+        },
+        {
+            "bin": 5,
+            "name": "gusci di molluschi"
+        },
+        {
+            "bin": 2,
+            "name": "imballaggi in carta e cartone"
+        },
+        {
+            "bin": 4,
+            "name": "imballaggi in polistirolo"
+        },
+        {
+            "bin": 1,
+            "name": "lacci per le scarpe"
+        },
+        {
+            "bin": 1,
+            "name": "lamette da barba"
+        },
+        {
+            "bin": 4,
+            "name": "lattine per bevande e per olio"
+        },
+        {
+            "bin": 1,
+            "name": "lettiere di animali domestici"
+        },
+        {
+            "bin": 2,
+            "name": "libri"
+        },
+        {
+            "bin": 5,
+            "name": "lische"
+        },
+        {
+            "bin": 1,
+            "name": "lucido da scarpe"
+        },
+        {
+            "bin": 1,
+            "name": "matite"
+        },
+        {
+            "bin": 1,
+            "name": "mozziconi di sigarette"
+        },
+        {
+            "bin": 1,
+            "name": "nastro per regali"
+        },
+        {
+            "bin": 5,
+            "name": "noccioli della frutta"
+        },
+        {
+            "bin": 1,
+            "name": "occhiali"
+        },
+        {
+            "bin": 5,
+            "name": "ossi (piccole quantità)"
+        },
+        {
+            "bin": 1,
+            "name": "palloni da gioco"
+        },
+        {
+            "bin": 5,
+            "name": "pane"
+        },
+        {
+            "bin": 1,
+            "name": "panni elettrostatici"
+        },
+        {
+            "bin": 1,
+            "name": "pannolini"
+        },
+        {
+            "bin": 5,
+            "name": "pasta"
+        },
+        {
+            "bin": 5,
+            "name": "peli e piume"
+        },
+        {
+            "bin": 4,
+            "name": "pellicole di cellophane"
+        },
+        {
+            "bin": 1,
+            "name": "pennarelli e pennelli"
+        },
+        {
+            "bin": 4,
+            "name": "pentole in alluminio o acciaio"
+        },
+        {
+            "bin": 5,
+            "name": "pesce"
+        },
+        {
+            "bin": 4,
+            "name": "piatti di plastica"
+        },
+        {
+            "bin": 1,
+            "name": "posate di plastica"
+        },
+        {
+            "bin": 1,
+            "name": "profilattici"
+        },
+        {
+            "bin": 2,
+            "name": "quaderni"
+        },
+        {
+            "bin": 1,
+            "name": "radiografie"
+        },
+        {
+            "bin": 1,
+            "name": "rasoi usa e getta"
+        },
+        {
+            "bin": 4,
+            "name": "retine per frutta e verdura"
+        },
+        {
+            "bin": 1,
+            "name": "righelli in plastica"
+        },
+        {
+            "bin": 2,
+            "name": "riviste"
+        },
+        {
+            "bin": 1,
+            "name": "sabbia per gatti"
+        },
+        {
+            "bin": 1,
+            "name": "sacchetti dell’aspirapolvere"
+        },
+        {
+            "bin": 4,
+            "name": "sacchetti di plastica e nylon"
+        },
+        {
+            "bin": 2,
+            "name": "sacchetti e buste di carta"
+        },
+        {
+            "bin": 6,
+            "name": "scarpe"
+        },
+        {
+            "bin": 2,
+            "name": "scatole di cartone"
+        },
+        {
+            "bin": 4,
+            "name": "scatole in acciaio per confezioni"
+        },
+        {
+            "bin": 4,
+            "name": "scatolette in banda stagnata per"
+        },
+        {
+            "bin": 2,
+            "name": "scontrini fiscali"
+        },
+        {
+            "bin": 1,
+            "name": "scontrini in carta termica"
+        },
+        {
+            "bin": 5,
+            "name": "segatura (non unta)"
+        },
+        {
+            "bin": 5,
+            "name": "sfalci da giardini, prati, potature"
+        },
+        {
+            "bin": 1,
+            "name": "siringhe"
+        },
+        {
+            "bin": 1,
+            "name": "spazzolini da denti"
+        },
+        {
+            "bin": 6,
+            "name": "stoffa in genere"
+        },
+        {
+            "bin": 1,
+            "name": "tamponi per timbri"
+        },
+        {
+            "bin": 4,
+            "name": "tappi di metallo e di alluminio"
+        },
+        {
+            "bin": 5,
+            "name": "tappi in sughero"
+        },
+        {
+            "bin": 2,
+            "name": "tetra pak"
+        },
+        {
+            "bin": 5,
+            "name": "torsoli"
+        },
+        {
+            "bin": 5,
+            "name": "tovaglioli di carta usati"
+        },
+        {
+            "bin": 1,
+            "name": "trucchi"
+        },
+        {
+            "bin": 4,
+            "name": "tubetti per conserve,"
+        },
+        {
+            "bin": 4,
+            "name": "tubetti per dentifricio"
+        },
+        {
+            "bin": 1,
+            "name": "tubi in gomma"
+        },
+        {
+            "bin": 5,
+            "name": "uova"
+        },
+        {
+            "bin": 4,
+            "name": "vaschette del gelato"
+        },
+        {
+            "bin": 4,
+            "name": "vaschette e contenitori"
+        },
+        {
+            "bin": 4,
+            "name": "vaschette e vassoi in polistirolo"
+        },
+        {
+            "bin": 4,
+            "name": "vasetti per alimenti"
+        },
+        {
+            "bin": 3,
+            "name": "vasi e vasetti di vetro"
+        },
+        {
+            "bin": 4,
+            "name": "vasi in plastica per piante"
+        },
+        {
+            "bin": 5,
+            "name": "verdura"
+        },
+        {
+            "bin": 6,
+            "name": "vestiario (abiti e accessori)"
+        },
+        {
+            "bin": 1,
+            "name": "zerbini"
+        }
+    ]
+}
