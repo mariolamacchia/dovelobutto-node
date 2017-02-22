@@ -14,50 +14,26 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.get('/bins', (req, res) => {
-  res.send({
-    data: bins,
-    _links: {
-      self: '/bins',
-    },
-  });
-});
-
 app.get('/products', (req, res) => {
-  const page = Number(req.query.page) || 0;
-  const name = req.query.name || '';
-  const first = (page || 0) * PAGE_LENGTH;
-  const last = first + PAGE_LENGTH;
-  const foundProducts = products.filter(v => (v.name.includes(name || '')));
-  const data = foundProducts.slice(first, last);
-  const links = {};
-
-  links.self = `/products?name=${name}&page=${page}`;
-  if (foundProducts.length > last) {
-    links.next = `/products?name=${name}&page=${page+1}`;
-  }
-  if (page > 0) {
-    links.prev = `/products?name=${name}&page=${page-1}`;
-  }
-
   res.json({
-    data,
-    _links: links,
+    data: products
+      .filter(p => p.name.includes(req.query.name || ''))
+      .slice(0, 10)
+      .map(p => Object.assign({}, p, {
+        bin: bins.find(b => b.id === p.bin),
+      }))
   });
 });
 
-app.get('/products/:name', (req, res) => {
-  const { name } = req.params;
-  const data = products.find(product => product.name === name);
-  if (data) {
-    res.json({ data, _links: { self: `/products/${name}`}});
+app.post('/products', (req, res) => {
+  if (
+    (req.body.email && isEmail(req.body.email)) &&
+    (typeof req.body.name === 'string' && req.body.name.trim() !== '')
+  ) {
+    res.sendStatus(200);
   } else {
-    res.sendStatus(404);
+    res.sendStatus(422);
   }
-});
-
-app.post('/email', (req, res) => {
-  res.sendStatus(isEmail(req.body.email || '') ? 201 : 422);
 });
 
 app.listen(3000);
