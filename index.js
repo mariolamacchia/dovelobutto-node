@@ -2,7 +2,7 @@ const app = require('express')();
 const bodyParser = require('body-parser')
 
 const { products, bins } = require('./db.json');
-const PAGE_LENGTH = 20;
+const PAGE_LENGTH = 10;
 
 const isEmail = email => !!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
@@ -18,7 +18,7 @@ app.get('/products', (req, res) => {
   res.json({
     data: products
       .filter(p => p.name.includes(req.query.name || ''))
-      .slice(0, 10)
+      .slice(0, PAGE_LENGTH)
       .map(p => Object.assign({}, p, {
         bin: bins.find(b => b.id === p.bin),
       }))
