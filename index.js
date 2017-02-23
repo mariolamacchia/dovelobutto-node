@@ -15,13 +15,26 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.get('/products', (req, res) => {
+  let found = products.find(p => p.name === req.query.name);
+  if (found) {
+    found = Object.assign({}, found, {
+      bin: bins.find(b => b.id === found.bin),
+    });
+  } else {
+    found = { name: req.query.name, bind: null };
+  }
+
+  const rest = products
+    .filter(p => (
+        p.name.includes(req.query.name || '') && p.name !== req.query.name
+    ))
+    .slice(0, PAGE_LENGTH - 1)
+    .map(p => Object.assign({}, p, {
+      bin: bins.find(b => b.id === p.bin),
+    }));
+
   res.json({
-    data: products
-      .filter(p => p.name.includes(req.query.name || ''))
-      .slice(0, PAGE_LENGTH)
-      .map(p => Object.assign({}, p, {
-        bin: bins.find(b => b.id === p.bin),
-      }))
+    data: [found, ...rest],
   });
 });
 
