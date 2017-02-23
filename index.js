@@ -21,7 +21,7 @@ app.get('/products', (req, res) => {
       bin: bins.find(b => b.id === found.bin),
     });
   } else {
-    found = { name: req.query.name, bind: null };
+    found = { name: req.query.name, bin: null };
   }
 
   const rest = products
