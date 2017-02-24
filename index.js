@@ -1,21 +1,24 @@
 const app = require('express')();
-const bodyParser = require('body-parser')
-
+const bodyParser = require('body-parser');
 const { products, bins } = require('./db.json');
-const PAGE_LENGTH = 10;
 
+const PAGE_LENGTH = 10;
 const isEmail = email => !!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
+// Set necessary headers.
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', '*');
+
   next();
 });
 
 app.use(bodyParser.json());
 
+// Returns a list of all available products in the database.
 app.get('/products', (req, res) => {
   let found = products.find(p => p.name === req.query.name);
+
   if (found) {
     found = Object.assign({}, found, {
       bin: bins.find(b => b.id === found.bin),
@@ -49,4 +52,11 @@ app.post('/products', (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3000);
+/**
+ * Run application.
+ * Users can edit the port where the application runs by passing it to the command-line:
+ *   yarn start 5000 // Using Yarn
+ *   npm run start 5000 // Using npm
+ *   node index.js 5000 // Executing index.js manually
+ */
+app.listen(process.env.PORT || process.argv[2] || 3000);
