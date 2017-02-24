@@ -1,9 +1,8 @@
 const app = require('express')();
-const bodyParser = require('body-parser')
-
+const bodyParser = require('body-parser');
 const { products, bins } = require('./db.json');
-const PAGE_LENGTH = 10;
 
+const PAGE_LENGTH = 10;
 const isEmail = email => !!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
 // Set necessary headers.
