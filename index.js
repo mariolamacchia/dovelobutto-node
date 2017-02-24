@@ -6,16 +6,20 @@ const PAGE_LENGTH = 10;
 
 const isEmail = email => !!email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
+// Set necessary headers.
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', '*');
+
   next();
 });
 
 app.use(bodyParser.json());
 
+// Define routes for application.
 app.get('/products', (req, res) => {
   let found = products.find(p => p.name === req.query.name);
+
   if (found) {
     found = Object.assign({}, found, {
       bin: bins.find(b => b.id === found.bin),
