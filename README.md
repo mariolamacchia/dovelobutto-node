@@ -106,7 +106,7 @@ Submit a new products with the user email
 
 **E.g.**:
 
-post https://dovelobutto.herokuapp.com/products?name=pla
+POST https://dovelobutto.herokuapp.com/products
 
 Body:
 ```
